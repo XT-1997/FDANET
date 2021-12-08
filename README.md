@@ -33,6 +33,7 @@ CUDA_VISIBLE_DEVICES=gpu_id python main.py --model fdanet --dataset 7S --scene c
 ```
 * evaluating on 12-Scenes dataset:
 ```
+
 CUDA_VISIBLE_DEVICES=gpu_id python main.py --model fdanet --dataset 12S --scene office2/5b --data_path ./data/ --flag test --resume model_path 
 ```
 
@@ -42,7 +43,7 @@ CUDA_VISIBLE_DEVICES=1 python main.py --model fdanet --dataset 7S --scene chess 
 ```
 
 # Pretrained Model. 
-We provide our pre-trained models on 7-Scenes [link](https://onedrive.live.com/?id=FAAA1B00E502919%215133&cid=0FAAA1B00E502919) and on 12-Scenes [link](https://onedrive.live.com/?id=FAAA1B00E502919%215135&cid=0FAAA1B00E502919). Download them and move them to their according folders. For example, move the chess_supervise_PFFM.pth to train_log/7-Scenes/. Then revise --resume train_log/7-Scenes/chess_supervise_PFFM.pth. 
+We provide our pre-trained models on 7-Scenes [link](https://1drv.ms/u/s!AhkpUA6woaoPqAy1QJBCWXACXK1B?e=DRXaj9) and on 12-Scenes [link](https://1drv.ms/u/s!AhkpUA6woaoPqA7s2laIRZK047I-?e=ch3DIv). Download them and move them to their according folders. For example, move the chess_supervise_PFFM.pth to train_log/7-Scenes/. Then revise --resume train_log/7-Scenes/chess_supervise_PFFM.pth. 
 
 
 # Results
