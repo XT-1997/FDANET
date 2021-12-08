@@ -27,7 +27,7 @@ CUDA_VISIBLE_DEVICES=gpu_id python main.py --model fdanet --dataset 7S --scene c
 CUDA_VISIBLE_DEVICES=gpu_id python main.py --model fdanet --dataset 12S --scene office2/5b --data_path ./data/ --flag train 
 ```
 * evaluating on 7-Scenes dataset:
-* ```
+```
 CUDA_VISIBLE_DEVICES=gpu_id python main.py --model fdanet --dataset 7S --scene chess --data_path ./data/ --flag test --resume model_path
 ```
 * evaluating on 12-Scenes dataset:
