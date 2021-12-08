@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python main.py --model fdanet --dataset my --scene room --data_path ./data/ --flag train 

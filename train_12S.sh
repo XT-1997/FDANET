@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=1 python main.py --model fdanet --dataset 12S --scene office2/5b --data_path ./data/ --flag test --resume /mnt/sda2/xt/12scenes/lap/office2/5b/epoch1029_acc69.1358024691358_trans0.03070527802986699_rot0.4148761675187368.pth
