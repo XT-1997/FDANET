@@ -46,5 +46,5 @@ CUDA_VISIBLE_DEVICES=1 python main.py --model fdanet --dataset 7S --scene chess 
 # Results
 * Evaluation result on 7-Scenes dataset:
 
-![Image text](https://github.com/XT-1997/FDANET/master/assets/Result_7Scenes.png)  
+![Image text](https://github.com/XT-1997/FDANET/main/assets/Result_7Scenes.png)  
 
