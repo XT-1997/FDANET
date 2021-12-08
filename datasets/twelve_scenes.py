@@ -22,7 +22,7 @@ class TwelveScenes(data.Dataset):
         self.model = model
         self.dataset = dataset
         self.aug = aug 
-        self.root = os.path.join('/home/k545/sda1/xietao/12Scenes/','12Scenes')
+        self.root = os.path.join(root,'12Scenes')
         self.scene = scene
         
         self.split = split

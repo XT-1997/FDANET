@@ -17,13 +17,13 @@ class my_dataset(data.Dataset):
                        [0.0,     0.0,  1.0]])
         self.intrinsics_color_inv = np.linalg.inv(self.intrinsics_color)            # 颜色相机内参的逆
         self.split = split
-        self.data = ['seq1','seq2','seq3'] if self.split == 'train' else ['seq3']
+        self.data = ['seq1','seq2','seq3','seq4','seq5'] if self.split == 'train' else ['seq5']
         self.aug = aug
         self.dataset = dataset
         self.frame = []
         self.RT = []
         for i in self.data:
-            with open('/mnt/sda2/xt/D455/' + i + '/rgb.txt') as f:
+            with open('/mnt/sda2/xt/dataset/camera_pose/' + i + '/rgb.txt') as f:
                 self.frames = f.readlines()
                 for j in self.frames:
                     self.frame.append((i, j.split(' ')[1][4:-5]))
@@ -36,9 +36,9 @@ class my_dataset(data.Dataset):
         seq_id, id = self.frame[index]
 
         objs = {}
-        objs['color'] = '/mnt/sda2/xt/D455/'+ seq_id + '/rgb' + '/' + id + '.png'
-        objs['depth'] = '/mnt/sda2/xt/D455/'+ seq_id + '/depth' + '/' + id + '.png'        # Twc
-        objs['pose'] = '/mnt/sda2/xt/D455/'+ seq_id + '/pose' + '/' + id + '.npy'
+        objs['color'] = '/mnt/sda2/xt/dataset/camera_pose/'+ seq_id + '/rgb' + '/' + id + '.png'
+        objs['depth'] = '/mnt/sda2/xt/dataset/camera_pose/'+ seq_id + '/depth' + '/' + id + '.png'        # Twc
+        objs['pose'] = '/mnt/sda2/xt/dataset/camera_pose/'+ seq_id + '/pose' + '/' + id + '.npy'
 
         img = cv2.imread(objs['color'])
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
