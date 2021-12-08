@@ -17,7 +17,7 @@ class my_dataset(data.Dataset):
                        [0.0,     0.0,  1.0]])
         self.intrinsics_color_inv = np.linalg.inv(self.intrinsics_color)            # 颜色相机内参的逆
         self.split = split
-        self.data = ['seq1','seq2','seq3','seq4','seq5'] if self.split == 'train' else ['seq5']
+        self.data = ['seq1','seq2','seq3','seq4'] if self.split == 'train' else ['seq5']
         self.aug = aug
         self.dataset = dataset
         self.frame = []
