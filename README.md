@@ -10,6 +10,7 @@ pip3 install -r requirement.txt
 * To compute pose by RANSAC-based PnP algorithm, you will need to build the cython module:
 ``` 
 cd ./pnpransac
+rm -rf build
 python setup.py build_ext --inplace
 ```
 
