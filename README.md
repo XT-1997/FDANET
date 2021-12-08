@@ -41,5 +41,7 @@ Examples:
 CUDA_VISIBLE_DEVICES=1 python main.py --model fdanet --dataset 7S --scene chess --data_path ./data/ --flag test --resume /mnt/sda2/xt/7scenes/lap/chess_supervise_PFFM.pth
 ```
 
-* Pretrained Model. We provide our pre-trained models on 7-Scenes [link](https://onedrive.live.com/?id=FAAA1B00E502919%215133&cid=0FAAA1B00E502919) and on 12-Scenes [link](https://onedrive.live.com/?id=FAAA1B00E502919%215135&cid=0FAAA1B00E502919)
+* Pretrained Model. We provide our pre-trained models on 7-Scenes [link](https://onedrive.live.com/?id=FAAA1B00E502919%215133&cid=0FAAA1B00E502919) and on 12-Scenes [link](https://onedrive.live.com/?id=FAAA1B00E502919%215135&cid=0FAAA1B00E502919). Download them and move them to their according folders. For example, move the chess_supervise_PFFM.pth to train_log/7-Scenes/. Then revise --resume train_log/7-Scenes/chess_supervise_PFFM.pth. 
+
+
 
