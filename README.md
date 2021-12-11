@@ -56,3 +56,8 @@ We provide our pre-trained models on 7-Scenes [link](https://1drv.ms/u/s!AhkpUA6
 * Evaluation result on 12-Scenes dataset:
 
 ![Image text](assets/Result_12Scenes.png)  
+
+* Evaluation result on actual_environment:
+Our proposed method achieves 0.032m and 1.69◦ in terms of average positional error and rotational error respectively, which is acceptable for camera localization applications.
+![Image text](assets/room.png)  
+
