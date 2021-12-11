@@ -18,7 +18,7 @@ python setup.py build_ext --inplace
 * 7-Scenes: Download the dataset from the [website](https://www.microsoft.com/en-us/research/project/rgb-d-dataset-7-scenes/).
 * 12-Scenes: Download the dataset from the [website](https://graphics.stanford.edu/projects/reloc/).
 * our actual environment:Besides experiments on open-source datasets, one actual environment is implemented to verify the effectiveness of the
-  proposed method. The dataset, which includes three training sequences and one testing sequence, is recorded from a hand-held Kinect RGB-D camera. We use an implementation of    the KinectFusion system to obtain the ground truth poses. 
+  proposed method. The dataset, which includes three training sequences and one testing sequence, is recorded from a hand-held Kinect RGB-D camera. We use an implementation of    the KinectFusion system to obtain the ground truth poses. Download the dataset from [here](https://drive.google.com/file/d/1XRtDAOc-R4A7O5wTexIYgwqPhxiD4Pxj/view?usp=sharing).
 
 # Training and evaluating
 * Training on 7-Scenes dataset:
