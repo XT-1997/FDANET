@@ -1,5 +1,5 @@
 # A Deep Feature Aggregation Network for Accurate Indoor Camera Localization
-This is the PyTorch implementation of our ra-l 2021 paper "A Deep Feature Aggregation Network for Accurate Indoor Camera Localization".
+This is the PyTorch implementation of our ra-l 2022 paper "A Deep Feature Aggregation Network for Accurate Indoor Camera Localization".
 
 # Installation 
 * To run our model, set up python3 environment from requirement.txt::
