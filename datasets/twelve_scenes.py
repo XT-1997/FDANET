@@ -30,7 +30,7 @@ class TwelveScenes(data.Dataset):
                 '.label.png']
         self.obj_keys = ['color', 'pose', 'depth', 'label']
 
-        if self.dataset == '12S' or self.split == 'test':
+        if self.dataset == '12S' and self.split == 'test':
             with open(os.path.join(self.root, self.scene, 
                     '{}{}'.format(self.split, '.txt')), 'r') as f:
                 self.frames = f.readlines()
